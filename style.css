@@ -1,0 +1,326 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: wheat;
+}
+
+
+[class*="col-"]{
+   width: 100%;
+}
+
+[class*="col-"]{
+    float: left;
+    padding: 15px;
+}
+
+.row{
+    width: 100%;
+}
+.row::after{
+    clear: both;
+    content: '';
+    display: table;
+}
+
+/* header starts */
+header{
+    background-color: rgb(48, 40, 40);
+    padding: 0% 1%;
+    text-align: center;
+    color: rgb(233, 226, 161);
+}
+.logo{
+    padding-top: 10px;
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+    text-align: center;
+    color: rgb(233, 226, 161);
+    border: 2px solid rgb(233, 226, 161);
+    border-radius: 50%;
+}
+.nav ul li{
+    display: block;
+}
+
+.nav ul li a{
+    list-style: none;
+    display: block;
+    text-decoration: none;
+    color: lightgoldenrodyellow;
+    line-height: 70px;
+    padding: 0 20px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-family: 'Roboto', sans-serif;
+    transition: .4s;
+}
+
+.nav ul li a:hover{
+    transform: scale(1.2);
+    background-color: rgba(190, 175, 175, 0.5);
+}
+
+/* header Ends */
+
+/* Banner starts */
+#banner-section{
+    background-image: url('image/background.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.banner-content{
+    padding: 50px 10px;
+    text-align: center;
+}
+.banner-content h1{
+    width: 100%;
+    margin: 15px auto;
+    font-size: 3.5rem;
+    background-color: rgba(114, 26, 26, 0.90);
+    color: rgb(241, 207, 164);
+    border-radius: 15px;
+    padding: 10px;
+    font-family: 'Handlee', cursive;
+    font-weight: bold;
+}
+.banner-content p{
+    width: 380px;
+    margin: 15px auto;
+    background-color: rgba(215, 201, 121,0.9) ;
+    padding: 10px;
+    font-size: 1.8rem;
+    border-radius: 15px;
+
+}
+.btn{
+    width: 160px;
+    padding: 10px;
+    font-size: 1.5rem;
+    border-radius: 25px;
+    border: none;
+    background-color: rgb(238, 225, 113);
+    transition: 0.4s;
+
+}
+.btn:hover{
+    transform: scale(1.2);
+}
+/* banner Ends */
+
+/* about us starts */
+#about-us{
+    padding: 1%;
+}
+.about-us-container{
+    text-align: center;
+}
+.about-us-container h2{
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+.about-us-container p{
+    margin-bottom: 10px;
+
+}
+/* about us Ends */
+
+/* food menu start */
+#food-section{
+    padding: 1%;
+}
+.card-body{
+    text-align: center;
+}
+.card-body img{
+   width: 100%;
+    height: 250px;
+    display:block;
+}
+.item-des{
+    background-color: rgba(91, 83, 38,0.5);
+}
+.item-name{
+    background-color:rgba(91, 83, 38,1);
+    padding: 10px;
+    font-size: 1.5rem;
+    color: white ;
+}
+.item-des > p{
+    font-size: 1.2rem;
+    padding: 8px;
+    font-weight: bold;
+}
+.card{
+    transition: 0.4s;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+
+/* food menu ends */
+
+/* contact starts */
+
+#contact{
+    padding: 1%;
+    background-color: rgb(177, 164, 91);
+}
+.map{
+    width: 100%;
+    height: 250px;
+}
+.contact-details{
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.contact-details p,address{
+    font-size: 1rem;
+}
+/* contacts ends */
+
+/* Footer starts */
+
+footer{
+    padding: 1%;
+    color: lightgoldenrodyellow;
+    background-color: rgb(46, 46, 42);
+}
+footer p{
+    line-height: 32px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.social-menu{
+    text-align: center;
+}
+.icon-style{
+
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 2rem;
+    padding: 5px;
+    border-radius: 50%;
+    border: 2px solid lightgoldenrodyellow;
+    margin: 0 10px;
+    text-align: center;
+    transition: 0.4s;
+}
+.icon-style:hover{
+    transform: scale(1.5);
+}
+/* Footer ends */
+/* small devices (Portrait tablets and large phones, 576px and up) */
+@media (min-width: 576px) {
+    .col-sm-1 {width: 8.33%;}
+    .col-sm-2 {width: 16.66%;}
+    .col-sm-3 {width: 25%;}
+    .col-sm-4 {width: 33.33%;}
+    .col-sm-5 {width: 41.66%;}
+    .col-sm-6 {width: 50%;}
+    .col-sm-7 {width: 58.33%;}
+    .col-sm-8 {width: 66.66%;}
+    .col-sm-9 {width: 75%;}
+    .col-sm-10 {width: 83.33%;}
+    .col-sm-11 {width: 91.66%;}
+    .col-sm-12 {width: 100%;}
+}
+/* Medium devices (Portrait tablets and large phones, 768px and up) */
+@media (min-width: 768px) {
+    .col-md-1 {width: 8.33%;}
+    .col-md-2 {width: 16.66%;}
+    .col-md-3 {width: 25%;}
+    .col-md-4 {width: 33.33%;}
+    .col-md-5 {width: 41.66%;}
+    .col-md-6 {width: 50%;}
+    .col-md-7 {width: 58.33%;}
+    .col-md-8 {width: 66.66%;}
+    .col-md-9 {width: 75%;}
+    .col-md-10 {width: 83.33%;}
+    .col-md-11 {width: 91.66%;}
+    .col-md-12 {width: 100%;}
+}
+/* Large devices (Portrait tablets and large phones, 992px and up) */
+@media (min-width: 992px) {
+    
+    .logo{
+        text-align: left;
+        padding-left: 12px;
+    }
+    .nav ul{
+        text-align: right;
+ 
+    }
+    .nav ul li{
+        display: inline-block;
+ 
+    }
+    .nav ul li a{
+        font-size: 1.2rem;
+        display: inline-block;
+        transition: 0.4s
+    }
+    .nav ul li a:hover{
+      background-color: transparent;
+      text-decoration: underline;
+      border-radius: 0px;
+    }
+
+    /* banner section starts */
+    
+    #banner-section{
+        position: relative;
+        height: 100vh;
+    }
+    .banner-content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .banner-content h1{
+        width: 750px;
+        font-size: 4rem;
+    }
+    .banner-content p{
+        width: 600px;
+        font-size: 3rem;
+    }
+    .btn{
+        width: 200px;
+        margin-top: 15px;
+        padding: 15px;
+        font-size: 2rem;
+    }
+    footer p{
+        text-align: left;
+    }
+    .social-menu{
+        text-align: right;
+    } 
+    /* banner section ends */
+    .col-lg-1 {width: 8.33%;}
+    .col-lg-2 {width: 16.66%;}
+    .col-lg-3 {width: 25%;}
+    .col-lg-4 {width: 33.33%;}
+    .col-lg-5 {width: 41.66%;}
+    .col-lg-6 {width: 50%;}
+    .col-lg-7 {width: 58.33%;}
+    .col-lg-8 {width: 66.66%;}
+    .col-lg-9 {width: 75%;}
+    .col-lg-10 {width: 83.33%;}
+    .col-lg-11 {width: 91.66%;}
+    .col-lg-12 {width: 100%;}
+}
